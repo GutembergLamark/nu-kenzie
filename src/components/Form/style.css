@@ -1,0 +1,266 @@
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+
+  --secundary: #03b898;
+
+  --gray-4: #212529;
+  --gray-3: #868e96;
+  --gray-2: #e9ecef;
+  --gray-1: #f8f9fa;
+}
+
+.form {
+  background-color: var(--gray-1);
+
+  width: 80%;
+  height: max-content;
+
+  padding: 2.1875rem 1rem;
+
+  font-family: "Inter";
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+
+  overflow-x: hidden;
+
+  animation: animate 1.5s;
+}
+
+@media only screen and (min-width: 480px) {
+  .form {
+    gap: 1.5625rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 85%;
+  }
+}
+
+.form__containerDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.3125rem;
+
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  .form__containerDescription {
+    gap: 0.9375rem;
+  }
+}
+
+.containerDescription__title {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--gray-4);
+}
+
+.containerDescription__input {
+  background-color: var(--gray-2);
+
+  border: none;
+  border-radius: 0.5rem;
+
+  padding: 0.625rem;
+
+  font-size: 0.75rem;
+
+  width: inherit;
+}
+
+@media only screen and (min-width: 480px) {
+  .containerDescription__input {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .containerDescription__input {
+    font-size: 14px;
+  }
+}
+
+.containerDescription__input::placeholder {
+  opacity: 0.7;
+}
+
+.containerDescription__input:focus {
+  outline: none;
+}
+
+.containerDescription__span {
+  font-size: 0.625rem;
+
+  font-weight: 400;
+
+  opacity: 0.5;
+}
+
+.form_containerValueType {
+  display: flex;
+  gap: 0.9375rem;
+
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 480px) {
+  .form_containerValueType {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+}
+
+.containerValueType__value {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 480px) {
+  .containerValueType__value {
+    width: 50%;
+  }
+}
+
+.containerValueType__value__title {
+  font-size: 0.75rem;
+}
+
+.containerValueType__value__inputDolar {
+  background-color: var(--gray-2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+
+  width: 100%;
+
+  padding: 0.625rem;
+
+  border-radius: 0.5rem;
+}
+
+.containerValueType__value__input {
+  border: none;
+
+  background-color: var(--gray-2);
+
+  font-size: 0.75rem;
+
+  width: 60%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.containerValueType__value__inputDolar span {
+  font-size: 0.75rem;
+}
+
+.containerValueType__value__input:focus {
+  outline: none;
+  resize: none;
+}
+
+.containerValueType__type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.9375rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .containerValueType__type {
+    width: 50%;
+  }
+}
+
+.containerValueType__type__title {
+  font-size: 0.75rem;
+  text-align: start;
+}
+
+.containerValueType__type__select {
+  border: none;
+  border-radius: 0.5rem;
+
+  padding: 0.625rem;
+
+  font-size: 0.75rem;
+
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: var(--gray-2) url("../../assets/ANGLE-DOWN.png") no-repeat 90% 50%;
+  color: var(--gray-4);
+}
+
+@media only screen and (min-width: 480px) {
+  .containerValueType__type__select {
+    width: 100%;
+  }
+}
+
+.containerValueType__type__select:focus {
+  outline: none;
+}
+
+.form__button {
+  background-color: var(--primary);
+  color: var(--gray-1);
+
+  padding: 0.9375rem;
+
+  font-size: 0.875rem;
+
+  border-radius: 0.5rem;
+
+  transition: all 0.5s linear;
+}
+
+@media only screen and (min-width: 480px) {
+  .form__button {
+    padding: 0.9375rem 1.875rem;
+  }
+}
+
+.form__button:hover {
+  background-color: var(--primary-2);
+  cursor: pointer;
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

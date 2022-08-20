@@ -1,0 +1,65 @@
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+
+  --secundary: #03b898;
+
+  --gray-4: #212529;
+  --gray-3: #868e96;
+  --gray-2: #e9ecef;
+  --gray-1: #f8f9fa;
+}
+
+.containerTotal {
+  background-color: var(--gray-1);
+
+  /* width: 85%; */
+  width: 80%;
+
+  border: 1px solid #e9ecef;
+  border-radius: 0.25rem;
+
+  padding: 0.9375rem 1.25rem;
+
+  font-family: "Nunito";
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+
+  margin-bottom: 1.875rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .containerTotal {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .containerTotal {
+    width: 85%;
+  }
+}
+
+.containerTotal__value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerTotal__value p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.containerTotal__value span {
+  color: var(--primary);
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.containerTotal__message {
+  text-align: start;
+  font-size: 0.75rem;
+}

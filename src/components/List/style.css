@@ -1,0 +1,170 @@
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+
+  --secundary: #03b898;
+
+  --gray-4: #212529;
+  --gray-3: #868e96;
+  --gray-2: #e9ecef;
+  --gray-1: #f8f9fa;
+}
+
+.financialSummary {
+  font-family: "Nunito";
+
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .financialSummary {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .financialSummary {
+    width: 100%;
+  }
+}
+
+.financialSummary__constainerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .financialSummary__constainerHeader {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .financialSummary__constainerHeader {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .containerHeader__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.financialSummary__listTransactions {
+  animation: exibirCard 1.5s;
+}
+
+.containerHeader__title {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 992px) {
+  .containerHeader__title {
+    text-align: start;
+  }
+}
+
+.list__navigation {
+  display: flex;
+
+  /* gap: 1.25rem; */
+  gap: 0.625rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .containerHeader__list {
+    width: 80%;
+  }
+  .list__navigation {
+    gap: 1.5625rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .list__navigation {
+    justify-content: flex-start;
+  }
+}
+
+.button__navigation {
+  background-color: var(--gray-2);
+  color: var(--gray-4);
+
+  /* padding: 0.625rem 0.9375rem; */
+  padding: 0.625rem;
+
+  text-decoration: none;
+
+  border-radius: 0.5rem;
+
+  transition: all 0.5s linear;
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--gray-1);
+}
+
+.listTransactions__title--noTransactions {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 480px) {
+  .listTransactions__title--noTransactions {
+    font-size: 1rem;
+    text-align: start;
+  }
+}
+
+.financialSummary__listTransactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5625rem;
+
+  margin-top: 1.875rem;
+
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .financialSummary__listTransactions {
+    align-items: flex-start;
+  }
+}
+
+.listTransactions--noTransactions img {
+  width: 80vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .listTransactions--noTransactions img {
+    width: 100%;
+  }
+}
+
+.no1 {
+  animation: exibirCard 1s;
+}
+.no2 {
+  animation: exibirCard 1.5s;
+}
+.no3 {
+  animation: exibirCard 2s;
+}
+
+@keyframes exibirCard {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

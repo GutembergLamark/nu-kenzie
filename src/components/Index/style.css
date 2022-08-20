@@ -1,0 +1,168 @@
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+
+  --secundary: #03b898;
+
+  --gray-4: #212529;
+  --gray-3: #868e96;
+  --gray-2: #e9ecef;
+  --gray-1: #f8f9fa;
+}
+
+.containerIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--gray-4);
+
+  font-family: "Nunito", sans-serif;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.containerIndex__info {
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 2.1875rem;
+}
+
+.containerIndex__info img {
+  width: 6.25rem;
+}
+
+.info__description {
+  color: #ffffff;
+
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.info__complement {
+  color: #ffffff;
+
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.info__button {
+  background-color: var(--primary);
+  color: #ffffff;
+
+  padding: 0.625rem 1.25rem;
+
+  width: 80%;
+
+  text-align: center;
+
+  border-radius: 0.5rem;
+
+  transition: all 0.5s linear;
+}
+
+.info__button:hover {
+  background-color: var(--primary-2);
+}
+
+.containerImage__background {
+  width: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  .containerIndex {
+    gap: 3.125rem;
+  }
+
+  .containerIndex__info {
+    width: 35%;
+  }
+
+  .info__description {
+    font-size: 1.375rem;
+    line-height: 25px;
+  }
+
+  .info__button {
+    padding: 0.625rem 1.25rem;
+
+    width: 70%;
+  }
+
+  .containerImage__background {
+    width: 12.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containerIndex {
+    justify-content: center;
+    gap: 3.125rem;
+  }
+
+  .containerIndex__info {
+    width: 25%;
+  }
+
+  .containerIndex__info img {
+    width: 7.5rem;
+  }
+
+  .info__description {
+    font-size: 1.875rem;
+    line-height: 35px;
+  }
+
+  .info__complement {
+    font-size: 0.875rem;
+  }
+
+  .info__button {
+    padding: 0.9375rem 1.875rem;
+
+    width: 70%;
+  }
+
+  .containerImage__background {
+    width: 18.75rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .containerIndex {
+    justify-content: center;
+    gap: 4.375rem;
+  }
+
+  .containerIndex__info {
+    width: 25%;
+  }
+
+  .containerIndex__info img {
+    width: 160px;
+  }
+
+  .info__description {
+    font-size: 2.375rem;
+    line-height: 3.125rem;
+  }
+
+  .info__complement {
+    font-size: 1rem;
+  }
+
+  .info__button {
+    padding: 0.9375rem 1.875rem;
+
+    width: 70%;
+  }
+
+  .containerImage__background {
+    width: 31.25rem;
+  }
+}

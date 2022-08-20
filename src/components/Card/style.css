@@ -1,0 +1,119 @@
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+
+  --secundary: #03b898;
+
+  --gray-4: #212529;
+  --gray-3: #868e96;
+  --gray-2: #e9ecef;
+  --gray-1: #f8f9fa;
+}
+
+.cardEntrada {
+  border-left: 3px solid var(--secundary);
+  border-radius: 0.25rem;
+}
+
+.cardSaida {
+  border-left: 3px solid var(--gray-2);
+  border-radius: 0.25rem;
+}
+
+.card {
+  width: 80%;
+
+  padding: 0.625rem 1.25rem;
+
+  background-color: var(--gray-1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  animation: exibirCard 1.5s;
+}
+
+@media only screen and (min-width: 480px) {
+  .card {
+    padding: 0.9375rem 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 1.25rem;
+  }
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__title {
+  padding-right: 4.375rem;
+
+  font-weight: 700;
+  text-align: left;
+  font-size: 0.875rem;
+
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .card__title {
+    font-size: 1rem;
+  }
+}
+
+.card__value {
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card__value {
+    font-size: 0.875rem;
+  }
+}
+
+.card__delete {
+  background-color: var(--gray-2);
+
+  padding: 0.3125rem;
+
+  border-radius: 3px;
+
+  width: 10px;
+  height: 10px;
+
+  transition: all 0.5s linear;
+}
+
+.card__delete:hover {
+  background-color: var(--gray-4);
+  color: var(--gray-1);
+  cursor: pointer;
+}
+
+.card__type {
+  text-align: left;
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  .card__tyoe {
+    font-size: 0.75rem;
+  }
+}
+
+@keyframes exibirCard {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

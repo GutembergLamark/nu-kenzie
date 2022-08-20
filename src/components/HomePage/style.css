@@ -1,0 +1,55 @@
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+
+  --secundary: #03b898;
+
+  --gray-4: #212529;
+  --gray-3: #868e96;
+  --gray-2: #e9ecef;
+  --gray-1: #f8f9fa;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.containerHome {
+  width: 100vw;
+
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .containerHome {
+    width: 70vw;
+
+    flex-direction: row;
+  }
+}
+
+.containerAddTransactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .containerAddTransactions {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .containerAddTransactions {
+    width: 80%;
+  }
+}
